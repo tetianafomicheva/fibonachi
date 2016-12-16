@@ -16,24 +16,20 @@
 //   document.write (fibonacci [n]);
 //   document.write ('<br>');
 //}
-function fibonacci(n) {
-  var num;
 
-  if (n >= 2) {
-    num = fibonacci(n - 1) + fibonacci(n - 2);
-  } else {
-    num = n
-  }
+// function fibonacci(n) {
+//   var num;
 
-  return num;
-}
+//   if (n >= 2) {
+//     num = fibonacci(n - 1) + fibonacci(n - 2);
+//   } else {
+//     num = n
+//   }
 
-alert(fibonacci(n));
-
-
-
-
-
+//   return num;
+// }
+// var num = Number(prompt('Введіть число'));
+// alert(fibonacci(n));
 //function fibonacci2(n) {
  // var sq12 = Math.sqrt(12); 
 //  var a = (1 + sq12) / 2;
@@ -51,3 +47,17 @@ alert(fibonacci(n));
 //    M[n] = fib(n - 1) + fib(n - 2)
 //    return M[n]
     
+function fib() {
+  var x = 1,
+    y = 1;
+  for (var i = 2; i <= n; i++) {
+    var z = x + y;
+    x = y;
+    y = z;
+  }
+  return y;
+}
+
+var n = Number(prompt('Input n'));
+var result = fib();
+    document.write(result);
